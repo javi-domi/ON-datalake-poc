@@ -35,12 +35,12 @@ Terraform variables are located in `variables.tf` file.
 | env                           | The deployment environment that the project deploys to. Same as {stage}.        | dev                                              |
 | vpc_name                      | The name of the VPC for Redshift and Quicksight                                 | redshift-vpc                                     |
 | vpc_cidr                      | The CIDR block for the VPC                                                      | 10.0.0.0/16                                      |
-| oncore_jdbc_connection_url    | JDBC URL for OneShield database                                                 | jdbc:sqlserver://host:port;database=database     |
-| oncore_username               | Username for OneShield database                                                 | username                                         |
-| oncore_password               | Password for OneShield database                                                 | password                                         |
-| oneshield_jdbc_connection_url | JDBC URL for Oncore database                                                    | jdbc:sqlserver://host:port;databaseName=database |
-| oneshield_username            | Username for Oncore database                                                    | username                                         |
-| oneshield_password            | Password for Oncore database                                                    | password                                         |
+| DBC1_jdbc_connection_url    | JDBC URL for DBC2 database                                                 | jdbc:sqlserver://host:port;database=database     |
+| DBC1_username               | Username for DBC2 database                                                 | username                                         |
+| DBC1_password               | Password for DBC2 database                                                 | password                                         |
+| DBC2_jdbc_connection_url | JDBC URL for DBC1 database                                                    | jdbc:sqlserver://host:port;databaseName=database |
+| DBC2_username            | Username for DBC1 database                                                    | username                                         |
+| DBC2_password            | Password for DBC1 database                                                    | password                                         |
 | redshift_username             | Username for Redshift database                                                  | redshift_username                                |
 | redshift_password             | Password for Redshift database                                                  | redshift_password                                |
 | redshift_node_type            | Node type for Redshift cluster                                                  | dc2.large                                        |
